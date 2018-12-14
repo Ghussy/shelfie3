@@ -30,3 +30,26 @@
     transform: rotate(360deg);
   }
 }
+
+.uploadbox {
+  display: flex;
+  flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+  align-content: stretch;
+  width:200px;
+}
+.body{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch;
+}
+.container{
+  background-color: aquamarine;
+  width: 300px;
+  
+}
