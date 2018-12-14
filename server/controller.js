@@ -6,7 +6,8 @@ module.exports = {
         })
     },
     post: (req, res) => {
-        const newSong = []
+        const newSong = [ req.body];
+
     }
 
 }

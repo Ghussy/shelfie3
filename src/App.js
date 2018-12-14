@@ -14,11 +14,12 @@ class App extends Component {
     this.state = {
 
       input: '',
+      products: ''
       
     }
   }
     componentDidMount() {
-    axios.get("/").then(res => {
+    axios.get("/api/prod").then(res => {
       this.setState({ products: res.data });
     });
   }

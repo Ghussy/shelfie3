@@ -11,7 +11,9 @@ const app = express();
 app.use(express.json());
 
 app.get('/api/prod', controller.getAll)
-app.post('/api/post', controller.post)
+
+app.post('/api/post', controller.post) 
+
 
 massive(CONNECTION_STRING).then(connection => {
     app.set('db', connection)
